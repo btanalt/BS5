@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        
+        <!-- Parent -->
+        <div class="container my-5">
+            <h1 class="mb-4 text-center">Bootstrap Forms</h1>
+            <section class="border border-dark rounded-3 p-4 bg-light mb-4">
+                <h2 class="mb-4 text-center">Basic Form Controls</h2>
+                <form action="update.php" method="post">
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required />
+                        <div class="form-text">We'll never share your email with anyone else</div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required />
+                    </div>
+    
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-input-check" name="checkbox" id="checkbox"/>
+                        <label class="form-check-label">Remember Me</label>
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <button type="submit" class="btn btn-outline-primary w-25">Log-in</button>
+                        <a href="register.html" class="btn btn-outline-success w-25">Register</a>
+                    </div>
+                </form>
+            </section>
+            <!-- 2nd Section -->
+            <section class="border border-dark rounded-3 p-4 bg-light mb-4">
+                <h2 class="mb-4 text-center">Form Controls Layout</h2>
+                <form class="row g-3" action="action.php">
+                    <div class="col-md-6">
+                        <label for="Firstname" class="form-label">First Name</label>
+                        <input type="text" class="form-control" name="firstname" placeholder="Enter your first name" id="firstname" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Lastname" class="form-label">First Name</label>
+                        <input type="text" class="form-control" name="lastname" placeholder="Enter your last name" id="lastname" required />
+                    </div>
+                    <div class="col-md-12">
+                        <label for="Address" class="form-label">Address</label>
+                        <input type="text" class="form-control" name="address" placeholder="1234 Guli-Guli St." id="address" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="City" class="form-label">City</label>
+                        <input type="text" class="form-control" name="city" placeholder="Enter your City" id="city" required />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="province" class="form-label">Province</label>
+                        <select name="Province" id="province" class="form-control">
+                            <option value="Cavite">Cavite</option>
+                            <option value="Rizal">Rizal</option>
+                            <option value="Batangas">Batangas</option>
+                            <option value="Tarlac">Tarlac</option>
+                            <option value="Quezon">Quezon</option>
+                            <option value="Laguna">Laguna</option>
+                            <option value="Oriental Mindoro" selected>Oriental Mindoro</option>
+                            <option value="Palawan">Palawan</option>
+                            <option value="Marinduque">Marinduque</option>
+                            <option value="Occidental Mindoro">Occidental Mindoro</option>
+                            <option value="Bataan">Bataan</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="Zipcode" class="form-label">Zip Code</label>
+                        <input type="text" class="form-control" name="Zipcode" placeholder="Zip Code" id="zipcode" required />
+                    </div>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button type="submit" class="btn btn-outline-primary w-25">Sign-up</button>
+                        <a href="register.html" class="btn btn-outline-danger w-25">Cancel</a>
+                    </div>
+                </form>
+            </section>
+            <!-- 3rd Section -->
+            <section class="border border-dark rounded-3 p-4 bg-light mb-4">
+                <h2 class="mb-4 text-center">Form Controls Validation</h2>
+                <form action="" validate class="needs-validation">
+                    <div class="mb-3">
+                        <label for="Username" class="form-label">Username</label>
+                        <input type="username" class="form-control is-valid" name="username" id="Username" placeholder="Enter your username" required />
+                        <div class="invalid-feedback">PLease enter a valid username</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control is-invalid" name="email" id="email" placeholder="Enter your email" required />
+                        <div class="invalid-feedback">PLease enter a valid email</div>
+                        <div class="form-text">We'll never share your email with anyone else</div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button type="submit" class="btn btn-outline-primary w-25">Log-in</button>
+                        <a href="register.html" class="btn btn-outline-danger w-25">Sign-up</a>
+                    </div>
+                </form>
+            </section>
+            <!-- 4th Section -->
+            <section class="border border-dark rounded-3 p-4 bg-light mb-4">
+                <h2 class="mb-4 text-center">Form Controls with Floating Lables</h2>
+                <form action="">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required />
+                        <label for="Email" class="form-label">Email Address</label>
+                        <div class="form-text">We'll never share your email with anyone else</div>
+                    </div>
+    
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required />
+                        <label for="Password" class="form-label">Password</label>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+
+
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
